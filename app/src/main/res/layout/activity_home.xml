@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:scrollbars="vertical"
+    tools:context=".home">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:onClick="abt"
+        android:tint="@color/cardview_dark_background"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="auto"
+        app:rippleColor="@color/colorAccent"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="188dp"
+        android:background="#643afc"
+        android:drawableLeft="@drawable/ic_action_game"
+        android:onClick="ply"
+        android:text="play game" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        app:srcCompat="@drawable/up" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:background="#643afc"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:onClick="log"
+        android:text="log in" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="256dp"
+        android:background="#643afc"
+        android:drawableLeft="@drawable/ic_action_add"
+        android:onClick="sin"
+        android:text="sign up" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="118dp"
+        android:elevation="10dp"
+        android:onClick="feed"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="154dp"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_action_send"
+                android:gravity="center"
+                android:text="Send Feedback"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:elevation="10dp"
+        android:onClick="back"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        tools:ignore="UnknownId">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_action_exit"
+                android:text="      Exit"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
